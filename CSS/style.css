@@ -1,6 +1,6 @@
 section{
     box-shadow:0px 0px 10px rgba(0,0,0,.5);
-    padding-top: 10px;
+    margin-top: 10px;
 }
 
 /*_________________ Début Mobile _________________*/
@@ -8,6 +8,9 @@ section{
     body{
         background-color:#072736;
         color: white;
+    }
+    #secTop{
+        text-align: center;
     }
     /* -------------------------------- Timeline -------------------------------- */
     #sectimeline{
@@ -75,10 +78,14 @@ section{
         background-color:#072736;
         color: white;
     }
+    #secTop{
+        text-align: center;
+    }
     #divtop{
         display: flex;
         flex-direction: row;
         flex-grow: auto;
+        gap: 10px;
         justify-content: space-around;
     }
 
