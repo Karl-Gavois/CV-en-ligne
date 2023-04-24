@@ -1,5 +1,6 @@
 section{
     box-shadow:0px 0px 10px rgba(0,0,0,.5);
+    padding-top: 10px;
 }
 
 /*_________________ Début Mobile _________________*/
@@ -11,7 +12,7 @@ section{
     /* -------------------------------- Timeline -------------------------------- */
     #sectimeline{
         background-color:#072736;
-        color:#fff;
+        color:white;
         padding:30px 20px;
         box-shadow:0px 0px 10px rgba(0,0,0,.5);
 }
@@ -69,8 +70,16 @@ section{
 /*_________________ Début PC _________________*/
 @media all and (min-width:1000px){
     body{
+        margin-left: 15%;
+        margin-right: 15%;
         background-color:#072736;
         color: white;
+    }
+    #divtop{
+        display: flex;
+        flex-direction: row;
+        flex-grow: auto;
+        justify-content: space-around;
     }
 
 /* -------------------------------- Timeline -------------------------------- */
