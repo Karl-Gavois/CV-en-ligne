@@ -1,0 +1,23 @@
+/*_________________ Début Mobile _________________*/
+@media all and (max-width:600px){
+    body{
+        background-color: aqua;
+    }
+    
+}/*_________________ Fin Mobile _________________*/
+
+/*_________________ Début tablette _________________*/
+@media all and (min-width:601px) and (max-width:999px){
+    body{
+        background-color:yellow;
+    }
+
+}/*_________________ Fin tablette _________________*/
+
+/*_________________ Début PC _________________*/
+@media all and (min-width:1000px){
+    body{
+        background-color:red;
+    }
+
+}/*_________________ Fin PC _________________*/
