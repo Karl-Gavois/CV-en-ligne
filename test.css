@@ -1,0 +1,155 @@
+*{
+    list-style: none;
+    background-color:#072736;
+    color: white;
+}
+section{
+    box-shadow:0px 0px 10px rgba(0,0,0,.5);
+    margin-top: 10px;
+}
+
+@media all and (max-width:600px){
+       
+    /* -------------------------------- BOUTON BURGER -------------------------------- */
+    
+    #menu__toggle {
+        opacity: 0;
+      }
+      #menu__toggle:checked + .menu__btn > span {
+        transform: rotate(45deg);
+      }
+      #menu__toggle:checked + .menu__btn > span::before {
+        top: 0;
+        transform: rotate(0deg);
+      }
+      #menu__toggle:checked + .menu__btn > span::after {
+        top: 0;
+        transform: rotate(90deg);
+      }
+      #menu__toggle:checked ~ .menu__box {
+        right: 0 !important;
+      }
+      .menu__btn {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        width: 26px;
+        height: 26px;
+        cursor: pointer;
+        z-index: 1;
+      }
+      .menu__btn > span,
+      .menu__btn > span::before,
+      .menu__btn > span::after {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: #616161;
+        transition-duration: .25s;
+      }
+      .menu__btn > span::before {
+        content: '';
+        top: -8px;
+    }
+    .menu__btn > span::after {
+      content: '';
+      top: 8px;
+    }
+    .menu__box {
+      display: block;
+      position: fixed;
+      top: 0;
+      right: -100%;
+      width: 300px;
+      height: 220px;
+      margin: 0;
+      padding: 40px 0;
+      list-style: none;
+      background-color: #072736;
+      box-shadow: 2px 2px 6px rgba(.4, 0, 0, .4);
+      transition-duration: .25s;
+    }
+    li {
+      margin-left: 15px;
+      margin-right: 15px;
+    }
+    li p {
+        font-size: 15px;
+    }
+    li h3 {
+        font-size: 20px;
+    }
+    li:not(:last-child) {
+      margin-bottom: 5px;
+    }
+    .menu__item {
+      display: block;
+      padding: 12px 24px;
+      color: #333;
+      text-align: center;
+      font-size: 25px;
+      font-weight: 600;
+      text-decoration: none;
+      transition-duration: .25s;
+    }
+    .menu__item:hover {
+      background-color:#1B9BA7;
+    }/* -------------------------------- FIN BOUTON BURGER -------------------------------- */
+    #secTop{
+        text-align: center;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    /* -------------------------------- Timeline -------------------------------- */
+    #sectimeline{
+        background-color:#072736;
+        color:white;
+        padding:30px 20px;
+        box-shadow:0px 0px 10px rgba(0,0,0,.5);
+}
+    #sectimeline ul{
+        list-style-type:none;
+        border-left:2px solid #094a68;
+        padding:10px 5px;
+}
+    #sectimeline ul li{
+        padding:20px 0 10px 20px;
+        position:relative;
+}
+    #sectimeline ul li span{
+        display:inline-block;
+        background-color:#1685b8;
+        border-radius:25px;
+        padding:2px 5px;
+        font-size:15px;
+        text-align:center;
+    }
+    #sectimeline ul li .content h3{
+        color:#34ace0;
+        font-size:17px;
+        padding-top:5px;
+    }
+    #sectimeline ul li .content p{
+        padding:5px 0px 5px 0px;
+        font-size:15px;
+    }
+    #sectimeline ul li:before{
+        position:absolute;
+        content:'';
+        width:10px;
+        height:10px;
+        background-color:#34ace0;
+        border-radius:50%;
+        left:-11px;
+        top:28px;
+        transition:.5s;
+    }/* -------------------------------- FIN Timeline -------------------------------- */
+    #secRezo{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 10%
+    }
+
+}
