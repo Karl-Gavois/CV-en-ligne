@@ -1,0 +1,176 @@
+section{
+    box-shadow:0px 0px 10px rgba(0,0,0,.5);
+    margin-top: 10px;
+}
+
+/*_________________ Début Mobile _________________*/
+@media all and (max-width:600px){
+    body{
+        background-color:#072736;
+        color: white;
+    }
+    #secTop{
+        text-align: center;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    /* -------------------------------- Timeline -------------------------------- */
+    #sectimeline{
+        background-color:#072736;
+        color:white;
+        padding:30px 20px;
+        box-shadow:0px 0px 10px rgba(0,0,0,.5);
+}
+    #sectimeline ul{
+        list-style-type:none;
+        border-left:2px solid #094a68;
+        padding:10px 5px;
+}
+    #sectimeline ul li{
+        padding:20px 0 10px 20px;
+        position:relative;
+}
+    #sectimeline ul li span{
+        display:inline-block;
+        background-color:#1685b8;
+        border-radius:25px;
+        padding:2px 5px;
+        font-size:15px;
+        text-align:center;
+    }
+    #sectimeline ul li .content h3{
+        color:#34ace0;
+        font-size:17px;
+        padding-top:5px;
+    }
+    #sectimeline ul li .content p{
+        padding:5px 0px 5px 0px;
+        font-size:15px;
+    }
+    #sectimeline ul li:before{
+        position:absolute;
+        content:'';
+        width:10px;
+        height:10px;
+        background-color:#34ace0;
+        border-radius:50%;
+        left:-11px;
+        top:28px;
+        transition:.5s;
+    }
+
+
+/* -------------------------------- FIN Timeline -------------------------------- */
+    
+}/*_________________ Fin Mobile _________________*/
+
+/*_________________ Début tablette _________________*/
+@media all and (min-width:601px) and (max-width:999px){
+    body{
+        background-color:yellow;
+    }
+
+}/*_________________ Fin tablette _________________*/
+
+/*_________________ Début PC _________________*/
+@media all and (min-width:1000px){
+    body{
+        margin-left: 15%;
+        margin-right: 15%;
+        background-color:#072736;
+        color: white;
+    }
+    #secRezo{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #secTop{
+        text-align: center;
+    }
+    #secTop p{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    #flex1{
+        display: flex;
+        flex-direction: row;
+        flex-grow: auto;
+        gap: 10px;
+        justify-content: center;
+    }
+    #flex2{
+        display: flex;
+        flex-direction: row;
+        flex-grow: 2;
+        gap: 10px;
+        flex-basis: auto;
+        justify-content: center;
+    }
+    .Aboutrow{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        row-gap: 10px;
+    }
+
+/* -------------------------------- Timeline -------------------------------- */
+
+    #sectimeline{
+        width:auto;
+        background-color:#072736;
+        color:#fff;
+        padding:30px 20px;
+        box-shadow:0px 0px 10px rgba(0,0,0,.5);
+}
+    #sectimeline ul{
+        list-style-type:none;
+        border-left:2px solid #094a68;
+        padding:10px 5px;
+}
+    #sectimeline ul li{
+        padding:20px 0 10px 20px;
+        position:relative;
+        cursor:pointer;
+        transition:.5s;
+}
+    #sectimeline ul li span{
+        display:inline-block;
+        background-color:#1685b8;
+        border-radius:25px;
+        padding:2px 5px;
+        font-size:15px;
+        text-align:center;
+    }
+    #sectimeline ul li .content h3{
+        color:#34ace0;
+        font-size:17px;
+        padding-top:5px;
+    }
+    #sectimeline ul li .content p{
+        padding:5px 0px 5px 0px;
+        font-size:15px;
+    }
+    #sectimeline ul li:before{
+        position:absolute;
+        content:'';
+        width:10px;
+        height:10px;
+        background-color:#34ace0;
+        border-radius:50%;
+        left:-11px;
+        top:28px;
+        transition:.5s;
+    }
+    #sectimeline ul li:hover{
+        background-color:#071f2a;
+    }
+    #sectimeline ul li:hover:before{
+        background-color:#0F0;
+        box-shadow:0px 0px 10px 2px #0F0;
+    }
+
+
+/* -------------------------------- FIN Timeline -------------------------------- */
+
+}/*_________________ Fin PC _________________*/
