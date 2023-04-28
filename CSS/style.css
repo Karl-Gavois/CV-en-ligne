@@ -9,6 +9,8 @@ section{
   background-color: lightgray;
   color: black;}
 
+.dark 
+
 #secRezo a {
   width: auto;
   height:auto;
@@ -374,7 +376,8 @@ section{
     margin-top: 16px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 16px;
   }  
 }/* -------------------------------- Fin version TABLETTE -------------------------------- */
 
