@@ -413,7 +413,7 @@ section{
   grid-column-end: 6;
   grid-row-start: 4;
   grid-row-end:5 ;
-  margin-top: 0
+  margin-top: 0px
 }
 #menu{
   grid-column-start:4 ;
@@ -441,7 +441,7 @@ section{
 #sectimeline{
     width:auto;
     color:#fff;
-    padding:30px 20px;
+    padding:1px 20px;
     box-shadow:0px 0px 10px rgba(0,0,0,.5);
 }
 #sectimeline ul{
@@ -514,18 +514,30 @@ section{
 }
 #divAbout li{
   list-style: none;
-  padding: 0;
+
   
 }
 #secAbout{
   box-shadow:0px 0px 10px rgba(0,0,0,.5);
   padding: 1px 20px;
+  margin-bottom: 15px;
+}
+#secAbout li{
+  padding: 0;
+}
+.menu__box{
+  padding: 0px 0;
+  margin: 0px 0;
 }
 #secLangu {
-  box-shadow:0px 0px 10px rgba(0,0,0,.5)
+  box-shadow:0px 0px 10px rgba(0,0,0,.5);
+  padding: 1px 20px;
+  margin-bottom: 15px;
+
 }
 #seclang{
-  box-shadow:0px 0px 10px rgba(0,0,0,.5)
+  box-shadow:0px 0px 10px rgba(0,0,0,.5);
+  padding: 1px 20px;
 }
 
 
