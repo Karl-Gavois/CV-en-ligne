@@ -4,8 +4,16 @@
 }
 section{
     box-shadow:0px 0px 10px rgba(0,0,0,.5);
-
 }
+.dark *{
+  background-color: lightgray;
+  color: black;}
+
+#secRezo a {
+  width: auto;
+  height:auto;
+}
+  
 /* -------------------------------- Version MOBILE -------------------------------- */
 @media all and (max-width:600px){
        
@@ -146,8 +154,9 @@ section{
     height: 40px;
     gap: 10%
   }
-  #secRezo a{
+  #secRezo i{
     margin-top: 12px;
+    padding-top: 7.5px;
   }
   #secTop{
     text-align: center;
@@ -325,8 +334,9 @@ section{
     height: 40px;
     gap: 10%
   }
-  #secRezo a{
+  #secRezo i{
     margin-top: 12px;
+    padding-top: 7.5px;
   }
   #secTop{
     text-align: center;
@@ -533,7 +543,4 @@ button{
   margin-left: 5px;
   margin-top: 5px;
 }
-
-
-
 }/* -------------------------------- Fin version PC -------------------------------- */
