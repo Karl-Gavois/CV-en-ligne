@@ -1,22 +1,38 @@
 body{
-    background-color:gray;
-    color: black;
+    background-color:#cac8c8;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 section{
+    background-color: #053c56;
     box-shadow:0px 0px 10px rgba(0,0,0,.5);
+    color: white;
 }
 .dark *{
-  background-color: #053c56;
-  color: white;
   transition-duration: 0.5s;}
 
 .dark #atoutinteret{
-  background-color: gray;
+  background-color: #cac8c8;
 }
-
+.dark section{
+  background-color: #cac8c8;
+  color: black;
+}
+.dark #secRezo a{
+  color: black;
+}
+.dark #sectimeline ul li .content h3{
+  color:#053c56;
+}
+.dark #sectimeline ul li span{
+  background-color: #053c56;
+  color: white;
+}
 #secRezo a {
   width: auto;
   height:auto;
+  color: white;
+  align-items: center;
 }
   
 /* -------------------------------- Version MOBILE -------------------------------- */
@@ -426,7 +442,6 @@ button{
 body{
   margin-left: 15%;
   margin-right: 15%;
-  color: white;
   display: grid;
   grid-template-columns: 18.36% 18.36% 18.4% 18.36% 18.36%;
   grid-template-rows: auto;
@@ -518,7 +533,6 @@ footer{
 
 #sectimeline{
     width:auto;
-    color:#fff;
     padding:1px 20px;
     box-shadow:0px 0px 10px rgba(0,0,0,.5);
 }
@@ -538,17 +552,17 @@ footer{
     background-color:#02a051;
     border-radius:25px;
     padding:2px 5px;
-    font-size:15px;
+    font-size:18px;
     text-align:center;
 }
 #sectimeline ul li .content h3{
-    color:#0F0;
-    font-size:17px;
+    color:#34ace0;
+    font-size:22px;
     padding-top:5px;
 }
 #sectimeline ul li .content p{
     padding:5px 0px 5px 0px;
-    font-size:15px;
+    font-size:18px;
 }
 #sectimeline ul li:before{
     position:absolute;
@@ -569,29 +583,19 @@ footer{
 
 #secTop{
     text-align: center;
+    font-size: 18px;
 }
 #secTop p{
     margin-left: 10px;
     margin-right: 10px;
 }
-#secAtouts{
+#secAboutpc{
+  box-shadow:0px 0px 10px rgba(0,0,0,.5);
   padding: 1px 20px;
-}
-#secAtouts li{
-  margin-bottom: 5px;
-
 }
 #secAboutpc li{
   list-style: none;
   margin-bottom: 25px;
-  padding: 1px 20px;
-}
-#seclangpc li{
-  margin-bottom: 25px;
-  list-style: none;
-}
-#secAboutpc{
-  box-shadow:0px 0px 10px rgba(0,0,0,.5);
   padding: 1px 20px;
 }
 #secAboutpc ul{
@@ -604,28 +608,81 @@ footer{
   padding: 0px 0;
   margin: 0px 0;
 }
-#secLangupc {
+#secLangupc{
   box-shadow:0px 0px 10px rgba(0,0,0,.5);
   padding: 1px 20px;
-  list-style: none;
 }
-#seclangpc{
-  box-shadow:0px 0px 10px rgba(0,0,0,.5);
+#secLangupc li{
+  list-style: none;
+  margin-bottom: 25px;
   padding: 1px 20px;
-  list-style: none;
 }
+#secLangupc ul{
+  list-style: none;
+  padding: 0;
+}
+#secLangupc li{
+  padding: 0;
+}
+#secAtouts{
+  box-shadow: 0px 0px 10px rgba(0,0,0,.5);
+  padding: 1px 20px;
+}
+#secAtouts li{
+  list-style: none;
+  margin-bottom: 25px;
+  padding: 1px 20px;
+}
+#secAtouts ul{
+  padding: 0;
+}
+#secAtouts li{
+  padding: 0;
+}
+
 #secInt{
+  box-shadow: 0px 0px 10px rgba(0,0,0,.5);
   padding: 1px 20px;
 }
 #secInt li{
-  margin-bottom: 15px;
+  list-style: none;
+  margin-bottom: 25px;
+  padding: 1px 20px;
+}
+#secInt ul{
+  padding: 0;
+}
+#secInt li{
+  padding: 0;
+}
+
+#seclangpc{
+  box-shadow:0px 0px 10px rgba(0,0,0,.5);
+  padding: 1px 20px;
+}
+#seclangpc li{
+  margin-bottom: 25px;
   list-style: none;
 }
+#seclangpc ul{
+  padding: 0;
+}
+#seclangpc li{
+  padding: 0;
+}
 #secphoto{
-  width:99% ;
-  height: 99%;
+  display: flex;
+  justify-content: center;
+}
+#secphoto img{
+  width:150px;
+  height:150px;
   border-radius: 49.5%;
   box-shadow:0px 0px 10px rgba(0,0,0,.5);
+  align-self: center;
+  text-align: center;
+  display: flex;
+  justify-content: center;
 }
 
 
