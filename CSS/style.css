@@ -1,4 +1,4 @@
-*{
+body{
     background-color:gray;
     color: black;
 }
@@ -143,7 +143,7 @@ section{
     text-align:center;
   }
   #sectimeline ul li .content h3{
-    color:yellow;
+    color:red;
     font-size:17px;
     padding-top:5px;
   }
