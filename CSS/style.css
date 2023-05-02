@@ -8,6 +8,10 @@ section{
     box-shadow:0px 0px 10px rgba(0,0,0,.5);
     color: white;
 }
+button{
+  background-color: #053c56;
+  color: white;
+}
 .dark *{
   transition-duration: 0.5s;}
 
@@ -28,6 +32,18 @@ section{
   background-color: #053c56;
   color: white;
 }
+.dark button{
+  background-color: #053c56;
+  color: white;
+}
+.dark footer{
+  background-color: #cac8c8;
+  color: #053c56;
+}
+.dark .menu__box{
+  background-color: #cac8c8;
+  color: black;
+}
 #secRezo a {
   width: auto;
   height:auto;
@@ -38,6 +54,9 @@ section{
 /* -------------------------------- Version MOBILE -------------------------------- */
 @media all and (max-width:600px){
 
+  #secphoto{
+    display: none;
+  }  
   #secAboutpc{
     display: none
   }
@@ -105,6 +124,7 @@ section{
     display: block;
     position: fixed;
     top: 0;
+    background-color: #053c56;
     right: -100%;
     width: 300px;
     height: 100%;
@@ -216,12 +236,15 @@ section{
     position: fixed;
     right: 20px;
   }
-  #secphoto{
-    width:99% ;
-    height:auto;
-    border-radius: 49.5%;
-    box-shadow:0px 0px 10px rgba(0,0,0,.5);
-  }
+.menu__box li img{
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  box-shadow:0px 0px 10px rgba(0,0,0,.5);
+  justify-self: center;
+  margin-left: 10%;
+  margin-top: 10px;
+}
 }/* -------------------------------- Fin version MOBILE -------------------------------- */
 
 /* -------------------------------- Version TABLETTE -------------------------------- */
@@ -299,6 +322,7 @@ section{
     right: -100%;
     width: 300px;
     height: 100%;
+    background-color: #053c56;
     margin-top: 0;
     padding: 0px 0;
     list-style: none;
@@ -429,6 +453,15 @@ section{
   footer{
     padding-top: 16px;
   }
+  .menu__box li img{
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    box-shadow:0px 0px 10px rgba(0,0,0,.5);
+    justify-self: center;
+    margin-left: 10%;
+    margin-top: 10px;
+  }
 }/* -------------------------------- Fin version TABLETTE -------------------------------- */
 
 /* -------------------------------- Version PC -------------------------------- */
@@ -436,7 +469,8 @@ section{
   
 button{
   position: absolute;
-  margin-left: 5px;
+  right: 15%;
+  margin-right: 5px;
   margin-top: 5px;
 }
 #menu__toggle{
@@ -456,6 +490,7 @@ body{
   grid-template-columns: 18.36% 18.36% 18.4% 18.36% 18.36%;
   grid-template-rows: auto;
   gap: 15px;
+  margin-bottom: 0;
 }
 #secTop{
   grid-column-start:1 ;
@@ -695,6 +730,11 @@ footer{
   display: flex;
   justify-content: center;
 }
-
+footer{
+  position: relative;
+  bottom: 0;
+  box-shadow:0px 0px 10px rgba(0,0,0,.5);
+  background-color: #053c56;
+}
 
 }/* -------------------------------- Fin version PC -------------------------------- */
