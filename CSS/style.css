@@ -597,6 +597,9 @@ footer{
   box-shadow:0px 0px 10px rgba(0,0,0,.5);
   padding: 1px 20px;
 }
+#secAboutpc ul{
+  padding: 0;
+}
 #secAboutpc li{
   padding: 0;
 }
@@ -608,7 +611,6 @@ footer{
   box-shadow:0px 0px 10px rgba(0,0,0,.5);
   padding: 1px 20px;
   list-style: none;
-  
 }
 #seclangpc{
   box-shadow:0px 0px 10px rgba(0,0,0,.5);
