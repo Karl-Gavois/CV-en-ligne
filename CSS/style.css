@@ -47,6 +47,11 @@ section{
   #seclangpc{
     display: none;
   }
+  #menu__toggle{
+    width: 27px;
+    height: 20px;
+    margin-left: 12px;
+  }
        
   /* -------------------------------- Menu -------------------------------- */
     
@@ -234,6 +239,11 @@ section{
   #seclangpc{
     display: none;
   }
+  #menu__toggle{
+    width: 27px;
+    height: 30px;
+    margin-left: 0;
+  }
 
   /* -------------------------------- Menu -------------------------------- */
   #menu__toggle {
@@ -255,8 +265,8 @@ section{
   }
   .menu__btn {
     position: fixed;
-    top: 20px;
-    left: 20px;
+    top: 25px;
+    left: 4%;
     width: 26px;
     cursor: pointer;
     z-index: 1;
@@ -404,7 +414,7 @@ section{
   }
   button{
     position: fixed;
-    right: 20px;
+    right: 4%;
   }
   #atoutinteret{
     margin-top: 16px;
@@ -549,7 +559,8 @@ footer{
 }
 #sectimeline ul li span{
     display:inline-block;
-    background-color:#02a051;
+    background-color:white;
+    color: #053c56;
     border-radius:25px;
     padding:2px 5px;
     font-size:18px;
