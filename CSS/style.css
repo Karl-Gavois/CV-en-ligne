@@ -1,15 +1,17 @@
 *{
-    background-color:#053c56;
-    color: white;
+    background-color:gray;
+    color: black;
 }
 section{
     box-shadow:0px 0px 10px rgba(0,0,0,.5);
 }
 .dark *{
-  background-color: lightgray;
-  color: black;}
+  background-color: #053c56;
+  color: white;}
 
-.dark 
+.dark #atoutinteret{
+  background-color: gray;
+}
 
 #secRezo a {
   width: auto;
@@ -18,6 +20,16 @@ section{
   
 /* -------------------------------- Version MOBILE -------------------------------- */
 @media all and (max-width:600px){
+
+  #secAboutpc{
+    display: none
+  }
+  #secLangupc{
+    display: none;
+  }
+  #seclangpc{
+    display: none;
+  }
        
   /* -------------------------------- Menu -------------------------------- */
     
@@ -200,6 +212,15 @@ section{
     padding-left: 3%;
     padding-right: 3%;
   }
+  #secAboutpc{
+    display: none
+  }
+  #secLangupc{
+    display: none;
+  }
+  #seclangpc{
+    display: none;
+  }
 
   /* -------------------------------- Menu -------------------------------- */
   #menu__toggle {
@@ -378,13 +399,27 @@ section{
     flex-direction: row;
     justify-content: center;
     gap: 16px;
-  }  
+  }
+  footer{
+    padding-top: 16px;
+  }
 }/* -------------------------------- Fin version TABLETTE -------------------------------- */
 
 /* -------------------------------- Version PC -------------------------------- */
 @media all and (min-width:1000px){
-
+  
+button{
+  position: absolute;
+  margin-left: 5px;
+  margin-top: 5px;
+}
 #menu__toggle{
+  display: none;
+}
+#menu{
+  display: none;
+}
+#divAbout{
   display: none;
 }
 /*--------------------------------- Display grid --------------------------------*/
@@ -399,9 +434,15 @@ section{
 }
 #secTop{
   grid-column-start:1 ;
-  grid-column-end:6 ;
+  grid-column-end:5 ;
   grid-row-start:1 ;
   grid-row-end: 2;
+}
+#secphoto{
+  grid-column-start:5 ;
+  grid-column-end: 6;
+  grid-row-start: 1;
+  grid-row-end:2;
 }
 #secRezo{
   grid-column-start: 1;
@@ -419,23 +460,59 @@ section{
   grid-column-start:1 ;
   grid-column-end:4 ;
   grid-row-start:3 ;
-  grid-row-end:5;
+  grid-row-end:7;
 }
 #atoutinteret{
   grid-column-start:4 ;
   grid-column-end: 6;
-  grid-row-start: 4;
-  grid-row-end:5 ;
-  margin-top: 0px
+  grid-row-start: 5;
+  grid-row-end:6 ;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 16px;
 }
-#menu{
+#secAboutpc{
   grid-column-start:4 ;
   grid-column-end: 6;
   grid-row-start: 3;
   grid-row-end:4;
   margin-top: 0
 }
-
+#secLangupc{
+  grid-column-start:4 ;
+  grid-column-end: 6;
+  grid-row-start: 4;
+  grid-row-end:5;
+  margin-top: 0
+}
+#secInt{
+  grid-column-start:4 ;
+  grid-column-end: 6;
+  grid-row-start: 6;
+  grid-row-end:7;
+  margin-top: 0
+}
+#seclangpc{
+  grid-column-start:4 ;
+  grid-column-end: 6;
+  grid-row-start: 6;
+  grid-row-end:7;
+  margin-top: 0
+}
+#secPC{
+  grid-column-start:4 ;
+  grid-column-end:6;
+  grid-row-start:3;
+  grid-row-end:4;
+  margin-top: 0
+}
+footer{
+  grid-column-start:1 ;
+  grid-column-end: 6;
+  grid-row-start: 7;
+  grid-row-end:8;
+}
 /*--------------------------------- Fin display grid --------------------------------*/
 /* -------------------------------- Timeline -------------------------------- */
 
@@ -505,45 +582,46 @@ section{
 }
 #secAtouts li{
   margin-bottom: 5px;
+
 }
-#secInt{
+#secAboutpc li{
+  list-style: none;
+  margin-bottom: 25px;
   padding: 1px 20px;
-  margin-top: 16px;
 }
-#secInt li{
-  margin-bottom: 5px;
-}
-#divAbout li{
+#seclangpc li{
+  margin-bottom: 25px;
   list-style: none;
 }
-#seclang li{
-  margin-bottom: 16px;
-}
-#secAbout{
+#secAboutpc{
   box-shadow:0px 0px 10px rgba(0,0,0,.5);
   padding: 1px 20px;
-  margin-bottom: 15px;
 }
-#secAbout li{
+#secAboutpc li{
   padding: 0;
 }
 .menu__box{
   padding: 0px 0;
   margin: 0px 0;
 }
-#secLangu {
+#secLangupc {
   box-shadow:0px 0px 10px rgba(0,0,0,.5);
   padding: 1px 20px;
+  list-style: none;
+  
+}
+#seclangpc{
+  box-shadow:0px 0px 10px rgba(0,0,0,.5);
+  padding: 1px 20px;
+  list-style: none;
+}
+#secInt{
+  padding: 1px 20px;
+}
+#secInt li{
   margin-bottom: 15px;
+  list-style: none;
+}
 
-}
-#seclang{
-  box-shadow:0px 0px 10px rgba(0,0,0,.5);
-  padding: 1px 20px;
-}
-button{
-  position: absolute;
-  margin-left: 5px;
-  margin-top: 5px;
-}
+
 }/* -------------------------------- Fin version PC -------------------------------- */
