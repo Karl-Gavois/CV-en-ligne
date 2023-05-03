@@ -169,7 +169,7 @@ button{
   }
   #sectimeline ul{
     list-style-type:none;
-    border-left:2px solid greenyellow;
+    border-left:2px solid #053c56;
     padding:10px 5px;
   }
   #sectimeline ul li{
