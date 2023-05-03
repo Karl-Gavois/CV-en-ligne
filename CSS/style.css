@@ -238,9 +238,9 @@ button{
     right: 20px;
   }
 .menu__box li img{
-  width: 200px;
-  height: 200px;
-  border-radius: 100px;
+  width: 120px;
+  height: 120px;
+  border-radius: 60px;
   box-shadow:0px 0px 10px rgba(0,0,0,.5);
   justify-self: center;
   margin-left: 10%;
