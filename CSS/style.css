@@ -358,14 +358,13 @@ button{
   }/* -------------------------------- Fin Menu -------------------------------- */
   /* -------------------------------- Timeline -------------------------------- */
   #sectimeline{
-    color:white;
     padding:1px 20px;
     box-shadow:0px 0px 10px rgba(0,0,0,.5);
     margin-top: 16px;
   }
   #sectimeline ul{
     list-style-type:none;
-    border-left:2px solid #094a68;
+    border-left:2px solid white;
     padding:10px 5px;
   }
   #sectimeline ul li{
@@ -373,30 +372,21 @@ button{
   }
   #sectimeline ul li span{
     display:inline-block;
-    background-color:#02a051;
+    background-color:white;
+    color:#053c56;
     border-radius:25px;
     padding:2px 5px;
     font-size:15px;
     text-align:center;
   }
   #sectimeline ul li .content h3{
-    color:#0F0;
+    color:white;
     font-size:17px;
     padding-top:5px;
   }
   #sectimeline ul li .content p{
     padding:5px 0px 5px 0px;
     font-size:15px;
-  }
-  #sectimeline ul li:before{
-    content:'';
-    width:10px;
-    height:10px;
-    background-color:#34ace0;
-    border-radius:50%;
-    left:-11px;
-    top:28px;
-    transition:.5s;
   }/* -------------------------------- FIN Timeline -------------------------------- */
   #secRezo{
     display: flex;
